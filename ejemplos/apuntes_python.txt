@@ -1,0 +1,13 @@
+APUNTES DE PYTHON - MATERIAL FICTICIO PARA LA DEMOSTRACIÓN
+
+Python es un lenguaje de programación de propósito general. Su sintaxis usa indentación para delimitar bloques. Los tipos frecuentes son int, float, str, bool, list y dict.
+
+Una variable permite asociar un nombre a un valor. Una condición if permite ejecutar una rama si una expresión es verdadera. El ciclo for recorre elementos de un iterable.
+
+Las funciones se definen con def y pueden recibir parámetros y devolver un valor usando return. Por ejemplo, def sumar(a, b): return a + b.
+
+Las excepciones representan errores que se producen durante la ejecución. try/except permite manejar ciertos errores, pero no debe ocultar los problemas indiscriminadamente.
+
+Un error de sintaxis ocurre cuando el código no sigue las reglas del lenguaje, por ejemplo al olvidar dos puntos después de if o def. Un error lógico ocurre cuando el código es válido, pero no produce el resultado esperado.
+
+Buenas prácticas: nombres descriptivos, funciones pequeñas, pruebas automatizadas, validación de entradas y evitar secretos en el repositorio.

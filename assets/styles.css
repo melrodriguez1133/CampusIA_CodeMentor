@@ -1,0 +1,77 @@
+/* CampusIA CodeMentor · CSS de presentación (sin JavaScript externo). */
+:root {
+  --code-bg: #0B1221;
+  --code-panel: #111D30;
+  --code-border: rgba(162,184,216,.16);
+  --code-muted: #9CAEC8;
+  --code-primary: #66E2D0;
+}
+.stApp {
+  background: radial-gradient(ellipse 820px 400px at 95% -10%, rgba(17,100,132,.18), transparent 76%),
+              radial-gradient(ellipse 500px 500px at -15% 35%, rgba(75,70,137,.10), transparent 65%),
+              var(--code-bg);
+}
+[data-testid="stSidebar"] {
+  background: #0E182A;
+  border-right: 1px solid var(--code-border);
+}
+[data-testid="stSidebar"] .block-container { padding-top: 1.25rem; }
+.main .block-container { max-width: 1135px; padding-top: 1.4rem; padding-bottom: 1.8rem; }
+h1, h2, h3 { letter-spacing: -.025em; }
+.hero-topline { color:var(--code-primary); font-size:.72rem; letter-spacing:.14em; font-weight:800; margin-bottom:.6rem; }
+.brand-name { font-size:1.52rem; font-weight:800; line-height:1.14; letter-spacing:-.04em; color:#F3F9FF; }
+.brand-subtitle { color:var(--code-muted); font-size:.82rem; margin-top:.22rem; }
+.brand-mark { display:inline-flex; align-items:center; justify-content:center; width:2.35rem; height:2.35rem;
+  border-radius:.75rem; background:linear-gradient(135deg,#1FD7CA,#527DF7); color:#0B1925; font-size:1.15rem; margin-right:.55rem; }
+.sidebar-sep { height:1px; background:var(--code-border); margin:1.1rem 0; }
+.header-surface { background:linear-gradient(115deg,rgba(21,48,70,.96),rgba(20,31,55,.98) 54%,rgba(28,43,66,.94));
+  border:1px solid var(--code-border); border-radius:20px; padding:1.4rem 1.6rem; margin-bottom:1rem; }
+.header-surface h1 { margin:0 0 .36rem 0; color:#F7FBFF; font-size:clamp(1.55rem,3vw,2.15rem); }
+.header-surface p { margin:0; color:#AFBDD4; font-size:.95rem; }
+.chips { margin-top:.9rem; display:flex; gap:.45rem; flex-wrap:wrap; }
+.chip { background:rgba(53,207,192,.09); border:1px solid rgba(96,225,209,.18); border-radius:100px;
+  padding:.25rem .66rem; color:#9CEADD; font-weight:650; font-size:.77rem; }
+.section-label { color:#9FB1C9; font-weight:750; font-size:.77rem; letter-spacing:.045em; text-transform:uppercase; }
+.section-hint { color:#A7B6CB; font-size:.9rem; margin-bottom:.45rem; }
+.card-lite { background:rgba(24,39,62,.78); border:1px solid var(--code-border); border-radius:15px; padding:1rem 1.12rem; min-height:94px; }
+.card-lite b { color:#E4F4FF; font-size:.96rem; }
+.card-lite p { margin:.33rem 0 0; color:var(--code-muted); font-size:.85rem; }
+/* Mensajería limpia: burbujas de color separadas por emisor. */
+[data-testid="stChatMessage"] {
+  border-radius:18px;
+  padding: .85rem 1.05rem;
+  margin-bottom:.58rem;
+  border:1px solid var(--code-border);
+  background:#13243A;
+  box-shadow: 0 5px 24px rgba(0,0,0,.07);
+  max-width: 92%;
+}
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
+  background:linear-gradient(125deg,#1B4560,#164556);
+  border-color:rgba(74,204,218,.24);
+  margin-left:auto;
+  margin-right:0;
+  max-width:83%;
+  border-radius:18px 18px 6px 18px;
+}
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]) {
+  background:linear-gradient(120deg,#182538,#162138);
+  margin-left:0;
+  margin-right:auto;
+  border-radius:18px 18px 18px 6px;
+}
+[data-testid="stChatMessage"] p { line-height:1.6; }
+[data-testid="stChatInput"] { border:1px solid rgba(104,215,206,.25); border-radius:14px; }
+[data-testid="stChatInput"] textarea { font-size:.96rem; }
+.stButton>button, .stDownloadButton>button, [data-testid="stFormSubmitButton"]>button {
+  border-radius:12px; min-height:2.5rem; border:1px solid var(--code-border);
+  transition: border-color .15s, background .15s;
+}
+.stButton>button:hover, .stDownloadButton>button:hover { border-color:#57D9C9; }
+[data-testid="stMetric"] {background:rgba(24,39,62,.76);border:1px solid var(--code-border);border-radius:13px;padding: .7rem .85rem;}
+[data-testid="stFileUploader"] { border-radius:14px; }
+@media (max-width:750px){
+  .header-surface { padding:1rem; }
+  .main .block-container { padding-left:.85rem; padding-right:.85rem; }
+  [data-testid="stChatMessage"] { max-width:100%; }
+}

@@ -1,0 +1,8 @@
+APUNTES DE JAVA — material ficticio para practicar
+
+Java es un lenguaje de programación orientado a objetos y de tipado estático.
+Una clase define atributos y métodos. Un objeto es una instancia de la clase.
+Un método tiene tipo de retorno, nombre y parámetros, por ejemplo int sumar(int a, int b).
+Una lista ArrayList<String> almacena cadenas. Un ciclo for puede recorrer los elementos.
+Para manejar errores previsibles pueden utilizarse excepciones con try y catch.
+Ejercicio: define una clase Libro con titulo, autor y un método mostrarResumen.

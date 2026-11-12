@@ -1,0 +1,18 @@
+CAMPUSIA CODEMENTOR — APRENDER LENGUAJES DE PROGRAMACION
+
+1) Descomprime esta carpeta completa.
+2) Ejecuta instalar.bat (primera vez; requiere internet).
+3) Ejecuta iniciar.bat y abre http://localhost:8501
+4) Elige Python o JavaScript y tu nivel.
+5) Selecciona Ollama local con qwen3:4b (modelo ya instalado en tu equipo).
+6) Pulsa Comprobar conexion.
+7) Prueba el Chat con mentor y los mensajes rapidos.
+8) Carga un material de ejemplo y consulta su contenido en el chat.
+9) Crea una ruta de aprendizaje de 14 dias.
+10) Genera ejercicios y revisa codigo en Practica de codigo.
+
+Si Gemini responde 503, puedes usar Ollama en la misma interfaz.
+Para comprobar Ollama en PowerShell:
+Invoke-RestMethod http://127.0.0.1:11434/api/tags
+
+No publiques el archivo .env, ni muestres API keys al compartir pantalla.

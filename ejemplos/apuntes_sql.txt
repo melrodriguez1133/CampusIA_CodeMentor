@@ -1,0 +1,8 @@
+APUNTES DE SQL — material ficticio para practicar
+
+SQL permite consultar y manipular datos en bases relacionales.
+SELECT nombre FROM estudiantes; recupera una columna.
+WHERE filtra filas: SELECT nombre FROM estudiantes WHERE edad >= 18;
+ORDER BY ordena resultados. GROUP BY agrupa filas para aplicar agregaciones como COUNT o SUM.
+JOIN relaciona tablas mediante condiciones: SELECT e.nombre, c.nombre FROM estudiantes e JOIN carreras c ON e.carrera_id = c.id;
+Ejercicio: consulta el nombre y total de cursos aprobados por estudiante.

@@ -1,0 +1,9 @@
+APUNTES DE JAVASCRIPT — material ficticio para practicar
+
+JavaScript se ejecuta en navegadores y también en servidores mediante entornos como Node.js.
+Variables: const declara una referencia que no puede reasignarse; let permite reasignación.
+Funciones: function saludar(nombre) { return `Hola, ${nombre}`; }
+Arrays: const notas = [10, 15, 20]; notas.map(x => x * 2) produce un nuevo array.
+Objetos: const persona = { nombre: "Ana", carrera: "Sistemas" }; se consulta persona.nombre.
+Asincronía: una Promise representa el resultado de una operación que puede terminar después.
+Ejercicio: crea una función que reciba un array de precios y retorne la suma usando reduce.
